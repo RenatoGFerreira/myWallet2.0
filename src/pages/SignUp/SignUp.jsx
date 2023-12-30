@@ -1,4 +1,4 @@
-import { ScreenContainer, LeftContainer, RightContainer, LoginContainer, TermsContainer } from "./Style";
+import { LeftContainer, RightContainer, LoginContainer, TermsContainer } from "./Style";
 import peaceful from "../../assets/img/peaceful.png"
 import LogoMyWallet from "../../components/LogoMyWallet";
 import { StyledInput } from "../../components/StyledInput";
@@ -6,6 +6,7 @@ import { StyledButton } from "../../components/StyledButton"
 import { StyledLink } from "../../components/StyledLink"
 import { ThreeDots } from "react-loader-spinner"
 import { useState } from "react";
+import { ScreenContainer } from "../../components/ScreenContainer";
 
 export default function SignUp() {
     const [isLoading] = useState(false)

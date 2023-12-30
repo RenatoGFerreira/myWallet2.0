@@ -10,4 +10,8 @@ const Text = styled.h1`
     font-family: 'Saira Stencil One', cursive;
     font-weight: 400;
     font-size: 32px;
+    @media (max-width: 1200px) {
+      color: #fff;
+      font-size: 42px;
+    }
 `

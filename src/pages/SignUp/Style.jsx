@@ -1,10 +1,5 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
-export const ScreenContainer = styled.div`
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-`
 export const LeftContainer = styled.div`
     background-color: #a328d6;
     height: 100vh;
@@ -22,6 +17,12 @@ export const LeftContainer = styled.div`
     &>img{
         width: 400px;
     }
+    @media (max-width: 1600px) {
+        width: 60%;
+    }
+    @media (max-width: 1200px) {
+        display: none;
+    }
 `
 export const RightContainer = styled.div`
     background-color: #eee;
@@ -31,6 +32,13 @@ export const RightContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @media (max-width: 1600px) {
+        width: 40%;
+    }
+    @media (max-width: 1200px) {
+        width: 100%;
+        background-color: #a328d6;
+    }
 `
 export const LoginContainer = styled.div`
     margin: 20px;
@@ -43,6 +51,10 @@ export const LoginContainer = styled.div`
     align-items: center;
     justify-content: space-evenly;
     box-shadow: 2px 2px 8px #7a7979;
+    
+    @media (max-width: 480px) {
+        width: 95%;
+    }
 `
 export const TermsContainer = styled.div`
     display: flex;
