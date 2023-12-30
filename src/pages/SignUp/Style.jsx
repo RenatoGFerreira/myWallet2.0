@@ -24,7 +24,7 @@ export const LeftContainer = styled.div`
     }
 `
 export const RightContainer = styled.div`
-    background-color: white;
+    background-color: #eee;
     height: 100vh;
     width: 33%;
     display: flex;
@@ -32,9 +32,23 @@ export const RightContainer = styled.div`
     align-items: center;
     justify-content: center;
 `
-
 export const LoginContainer = styled.div`
-    border: 1px solid red; 
+    margin: 20px;
     width: 450px;
     height: 650px;
+    border-radius: 20px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 2px 2px 8px #7a7979;
+`
+export const TermsContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+
+    &>span{
+        margin: 10px;
+    }
 `
