@@ -1,53 +1,83 @@
 import styled from "styled-components";
 
 export const MainScreen = styled.div`
+    width: 95%;
+    height: calc(100vh - 180px);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 70px;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 1600px) {
+        border: 1px solid yellow;
+    }
+    @media (max-width: 1200px) {
+        
+    }
+    @media (max-width: 992px) {
+        
+    }
+    @media (max-width: 768px) {
+        
+    }
+    @media (max-width: 480px) {
+
+    }
+`
+export const MediumScreen = styled.div`
+    border: 1px solid orange;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 992px) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
 `
 export const BasicInfo = styled.div`
     display: flex;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+`
+export const GraphInfo = styled.div`
+    border: 1px solid red;
+    width: 70%;
+    height: 50%;
+    display: block;
+    @media (max-width: 992px) {
+        width: 100%;
+    }
+`
+
+export const GraphInfo2 = styled.div`
+    border: 1px solid yellow;
+    width: 30%;
+    height: 50%;
+    @media (max-width: 992px) {
+        width: 100%;
+    }
 `
 export const TransactionInfo = styled.div`
-    border: 1px solid blue;
-    width: 500px;
-    height: 300px;
-    display: block;
-`
-
-export const MarketInfo = styled.div`
-    border: 1px solid blue;
-    width: 500px;
-    height: 300px;
-    display: block;
-`
-
-export const CardBasic = styled.div`
-    width: 250px;
-    height: 130px;
-    background: rgb(36,48,85);
-    background: ${props => props.color } ;
-    box-shadow: rgb(0,0,0,0.7) 5px 5px 5px ,rgb(0,0,0,0.7) -5px 0px 250px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    border-radius: 15px;
-    &>span{
-        font-size: 25px;
-        font-weight: 700;
-        color: #fff;
+    border: solid 1px green;
+    width: 70%;
+    height: 50%;
+    @media (max-width: 992px) {
+       width: 100%;
     }
-    &>h1{
+`
+export const HealthFinantialInfo = styled.div`
+    border: 1px solid pink;
+    width: 30%;
+    height: 50%;
+    @media (max-width: 992px) {
         width: 100%;
-        color: #fff;
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        font-size: 14px;
-        font-weight: 700;
     }
 `

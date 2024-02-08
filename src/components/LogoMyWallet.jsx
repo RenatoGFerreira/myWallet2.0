@@ -11,8 +11,10 @@ const Text = styled.h1`
     font-weight: 400;
     font-size: 32px;
     color: #000;
+    background-color: #a328d6;
     @media (max-width: 1200px) {
       color: #fff;
-      font-size: 42px;
+      font-size: 36px;
+      text-decoration: underline;
     }
 `

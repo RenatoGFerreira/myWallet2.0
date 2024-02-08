@@ -1,21 +1,19 @@
-import { ScreenMain, BasicInfo, TrnsactionInfo, ScreenCard } from "./Style"
-
-
-
+import { ScreenMain, IconContainer, Icon, InfoContainer, Title, Subtitle } from "./Style"
 
 export default function CardInfo() {
     return (
         <ScreenMain>
-            <BasicInfo>
-
-            </BasicInfo>
-            <TrnsactionInfo>
-
-            </TrnsactionInfo>
-            <ScreenCard>
-
-            </ScreenCard>
-
+            <IconContainer>
+                <Icon/>
+            </IconContainer>
+            <InfoContainer>
+                <Title>
+                    Saldo em Conta
+                </Title>
+                <Subtitle>
+                    R$ 3123,12
+                </Subtitle>
+            </InfoContainer>
         </ScreenMain>
     )
 }
